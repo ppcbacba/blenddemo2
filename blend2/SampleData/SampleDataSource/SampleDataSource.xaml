@@ -1,0 +1,19 @@
+﻿<!--
+   *********  请勿修改此文件   *********
+   此文件由设计工具再生成。更改
+   此文件可能会导致错误。
+-->
+<SampleDataSource:SampleDataSource xmlns:SampleDataSource="clr-namespace:Expression.Blend.SampleData.SampleDataSource">
+	<SampleDataSource:SampleDataSource.Persons>
+		<SampleDataSource:PersonsItem Name="Aliquam cras" Sex="True" description="Class cras duis nunc"/>
+		<SampleDataSource:PersonsItem Name="Class nam duis integer" Sex="False" description="Maecenas aenean aliquam curae"/>
+		<SampleDataSource:PersonsItem Name="Quisque sed nunc aenean" Sex="True" description="Donec integer nam"/>
+		<SampleDataSource:PersonsItem Name="Curae dis vivamus est" Sex="False" description="Etiam quisque sed amet"/>
+		<SampleDataSource:PersonsItem Name="Amet donec aliquam etiam" Sex="True" description="Dis mauris"/>
+		<SampleDataSource:PersonsItem Name="Ante mauris hac leo" Sex="False" description="Nullam praesent vivamus"/>
+		<SampleDataSource:PersonsItem Name="Aliquet blandit" Sex="True" description="Ante arcu aliquam"/>
+		<SampleDataSource:PersonsItem Name="Arcu maecenas praesent" Sex="False" description="Est aliquet aptent"/>
+		<SampleDataSource:PersonsItem Name="Commodo conubia" Sex="True" description="Auctor blandit diam commodo"/>
+		<SampleDataSource:PersonsItem Name="Cubilia dapibus" Sex="False" description="Accumsan eget congue"/>
+	</SampleDataSource:SampleDataSource.Persons>
+</SampleDataSource:SampleDataSource>

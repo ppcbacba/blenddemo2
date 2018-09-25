@@ -5,13 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:blend2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" d:DataContext="{d:DesignData /SampleData/SampleDataSource/SampleDataSource.xaml}">
+    <Window.Resources>
+        <Style x:Key="TextBlockStyle1" TargetType="{x:Type TextBlock}">
+            <Setter Property="FontFamily" Value="Microsoft YaHei UI"/>
+            <Setter Property="FontSize" Value="12"/>
+        </Style>
+        <DataTemplate x:Key="DataTemplate1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock TextWrapping="Wrap" Text="{Binding Name}"/>
+                <CheckBox Content="男" Grid.Column="1" IsChecked="{Binding Sex}"/>
+            </Grid>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="人员列表" FontFamily="SimHei" FontSize="22" Margin="10"/>
+        <TextBlock Text="人员列表" Margin="10" Style="{DynamicResource TextBlockStyle1}"/>
+        <ListBox Grid.Row="1" ItemsSource="{Binding Persons}" ItemTemplate="{DynamicResource DataTemplate1}" HorizontalContentAlignment="Stretch"/>
 
     </Grid>
 </Window>
