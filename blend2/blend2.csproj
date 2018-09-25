@@ -58,6 +58,14 @@
     <Compile Include="SampleData\SampleDataSource\SampleDataSource.xaml.cs">
       <DependentUpon>SampleDataSource.xaml</DependentUpon>
     </Compile>
+    <Page Include="BaseStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CoreStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
